@@ -1,0 +1,33 @@
+
+<%- include('header'); -%>
+<h1>Home</h1>
+<p class="intro"> <%= homeStartingContent  %></p>
+
+
+<% for(var i=0; i<Team.length;i++){ %>
+
+    <div class="continer teams">
+<h2> <%= Team[i].name+ "Team" %></h2>
+<p><%= "The manager is: "+Team[i].manager %></p>
+<p><%= "The coach is: "+Team[i].coach %></p>
+<p><%= "The captain is: "+Team[i].captain %></p>
+<p><%= "Number of Points: "+Team[i].points %></p>
+<button class="btn"><a href="/Ateam/<%= Team[i].name %>">View Players</a></button>
+
+
+</div>
+
+<% } %>
+
+<div class="continer">
+    <form action="/addTeam" method="post">
+    <h2> add a new Team</h2>
+   <input type="text" placeholder="Enter the Team Name" name="TName">
+   <input type="hidden"  name="TournamentName" value=<%= Tournament %>>
+
+   <button type="submit"> Submit</button>
+   
+</form>
+    </div>
+
+<%- include("footer"); -%>

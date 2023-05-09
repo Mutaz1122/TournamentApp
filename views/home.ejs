@@ -1,0 +1,25 @@
+
+<%- include('header'); -%>
+<h1>Home</h1>
+<p class="intro"> <%= homeStartingContent  %></p>
+
+
+<% for(var i=0; i<Tournament.length;i++){ %>
+
+    <div class="continer">
+<h2> <%= Tournament[i].name+ " Tournament" %></h2>
+<% const Sdate= Tournament[i].Sdate.toLocaleDateString('en-US', { month: '2-digit', year: 'numeric' }); %>
+<% const Edate= Tournament[i].Edate.toLocaleDateString('en-US', { month: '2-digit', year: 'numeric' }); %>
+
+<p><%= "Start data: "+Sdate+", End date: "+ Edate %></p>
+<button class="btn"><a href="/tournament/<%= Tournament[i].name %>">View Teams</a></button>
+<button class="btn"><a href="/match/<%= Tournament[i].name %>">View Matches</a></button>
+
+
+</div>
+
+<% } %>
+
+
+
+<%- include("footer"); -%>

@@ -1,0 +1,41 @@
+
+<%- include('header'); -%>
+<h1>Admain Page</h1>
+<p class="intro"> <%= homeStartingContent  %></p>
+<% for(var i=0; i<Request.length;i++){ %>
+
+   
+
+
+<p><%= "There is a request to add the player:  "+Request[i].Pname+", to the team: "+ Request[i].Tname %></p>
+<button ><a href="/approve/<%= Request[i].Tname+"/"+ Request[i].Pname %>">approve</a></button>
+
+<% } %>
+
+<% for(var i=0; i<Tournament.length;i++){ %>
+
+    <div class="continer">
+<h2> <%= Tournament[i].name+ " Tournament" %></h2>
+<% const Sdate= Tournament[i].Sdate.toLocaleDateString('en-US', { month: '2-digit', year: 'numeric' }); %>
+<% const Edate= Tournament[i].Edate.toLocaleDateString('en-US', { month: '2-digit', year: 'numeric' }); %>
+
+<p><%= "Start data: "+Sdate+", End date: "+ Edate %></p>
+<button class="btn"><a href="/Atournament/<%= Tournament[i].name %>">View Teams</a></button>
+<button class="btn"><a href="/Adelete/<%= Tournament[i].name %>">Delete This Tournament </a></button>
+
+
+
+</div>
+
+<% } %>
+<div class="continer">
+    <form action="/addTournament" method="post">
+    <h2> add a new Tournament</h2>
+   <input type="text" placeholder="Enter the Tournament Name" name="TournamentName">
+   <button type="submit"> Submit</button>
+    
+</form>
+    </div>
+
+
+<%- include("footer"); -%>

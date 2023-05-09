@@ -1,0 +1,21 @@
+{
+  "name": "ejs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "body-parser": "^1.18.3",
+    "chance": "^1.1.11",
+    "ejs": "^3.1.8",
+    "express": "^4.16.3",
+    "faker": "^6.6.6",
+    "lodash": "^4.17.11",
+    "mongoose": "^7.0.3"
+  }
+}

@@ -1,0 +1,31 @@
+
+<%- include('header'); -%>
+<h1>Team Players</h1>
+<p class="intro"> <%= homeStartingContent  %></p>
+
+
+<% for(var i=0; i<Player.length;i++){ %>
+
+    <div class="continer Match">
+<h2> <%= Player[i].name %></h2>
+<h5> <%= "Number of goales: "+Player[i].goals %></h5>
+<h5> <%= "Number of Yellow cards: "+Player[i].Ycard %></h5>
+<h5> <%= "Number of Red Cards: "+Player[i].Rcard %></h5>
+<form action="/captain" method="post">
+    <h2> selsect as a captain</h2>
+   <input value=<%= Player[i].name%> type="hidden"  name="PlayerName">
+   <input value=<%= Pname%> type="hidden" name=teamName >
+   <button type="submit"> Submit</button>
+    
+</form>
+
+
+
+
+</div>
+
+<% } %>
+
+
+
+<%- include("footer"); -%>

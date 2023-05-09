@@ -1,0 +1,19 @@
+
+<%- include('header'); -%>
+<h1>Matches</h1>
+<p class="intro"> <%= homeStartingContent  %></p>
+
+
+<% for(var i=0; i<Match.length;i++){ %>
+
+    <div class="continer Match">
+<h2> <%= Match[i].T1+ "  "+Match[i].T1result+" : "+ Match[i].T2result+ "  "+ Match[i].T2 %></h2>
+
+
+</div>
+
+<% } %>
+
+
+
+<%- include("footer"); -%>

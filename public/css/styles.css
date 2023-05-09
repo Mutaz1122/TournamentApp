@@ -1,0 +1,91 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+body{
+  text-align: center;
+  justify-content: center;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+
+.continer{
+
+	text-align: center;
+  justify-content: center;
+    border: 2px inset rgba(26,188,156,0.73);
+    border-radius: 40px;
+  width: 50%;
+    padding: 15px;
+    margin: 10px;
+margin-left: 30rem;
+}
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+
+.intro{
+margin-bottom: 50px;
+
+}
+.footer {
+	position: relative;
+	text-align: center;
+justify-content: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+  padding-top: 20px;
+	font-size: 12px;
+  color: #fff;
+}
+.btn {
+    background: #1abc9c;
+    background-image: -webkit-linear-gradient(top, #1abc9c, #1abc9c);
+    background-image: -moz-linear-gradient(top, #1abc9c, #1abc9c);
+    background-image: -ms-linear-gradient(top, #1abc9c, #1abc9c);
+    background-image: -o-linear-gradient(top, #1abc9c, #1abc9c);
+    background-image: linear-gradient(to bottom, #1abc9c, #1abc9c);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #1abc9c;
+    background-image: -webkit-linear-gradient(top, #1abc9c, #1abc9c);
+    background-image: -moz-linear-gradient(top, #1abc9c, #1abc9c);
+    background-image: -ms-linear-gradient(top, #1abc9c, #1abc9c);
+    background-image: -o-linear-gradient(top, #1abc9c, #1abc9c);
+    background-image: linear-gradient(to bottom, #1abc9c, #1abc9c);
+    text-decoration: none;
+  }
+  .login{
+    display: inline-block;
+    padding-top:1.5rem;
+    margin-left: 3rem;
+    color: #8b8989;
+
+  }
